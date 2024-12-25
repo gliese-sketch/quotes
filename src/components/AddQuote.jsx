@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-function AddQuote() {
+function AddQuote({ onSubmit }) {
   const [inputValue, setIntputValue] = useState("");
 
   const handleSubmit = (e) => {
@@ -10,7 +10,7 @@ function AddQuote() {
 
     if (!inputValue.trim()) return; // Return if input empty
 
-    console.log(inputValue);
+    onSubmit(inputValue);
 
     setIntputValue(""); // Reset the input field
   };
