@@ -1,12 +1,11 @@
 import SingleQuote from "./SingleQuote";
 
-function ListQuotes() {
+function ListQuotes({ quotes }) {
   return (
     <div className="flex flex-col gap-2">
-      <SingleQuote />
-      <SingleQuote />
-      <SingleQuote />
-      <SingleQuote />
+      {quotes.map((quote) => (
+        <SingleQuote key={quote.id} quote={quote} />
+      ))}
     </div>
   );
 }
