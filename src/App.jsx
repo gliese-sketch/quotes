@@ -1,6 +1,5 @@
 import AddQuote from "@/components/AddQuote";
 import ListQuotes from "@/components/ListQuotes";
-import SingleQuote from "@/components/SingleQuote";
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
       <h1 className="text-3xl text-center font-bold my-5">Quotes</h1>
       <AddQuote />
       <ListQuotes />
-      <SingleQuote />
     </div>
   );
 }

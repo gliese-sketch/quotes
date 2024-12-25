@@ -16,7 +16,7 @@ function AddQuote() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="mb-5">
       <Input
         type="text"
         placeholder="Add a Quote"

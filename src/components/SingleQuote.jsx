@@ -1,3 +1,4 @@
+import { ThumbsUp, ThumbsDown } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -17,8 +18,12 @@ function SingleQuote() {
         <CardDescription>Total Likes: 0</CardDescription>
       </CardHeader>
       <CardFooter className="flex gap-2">
-        <Button variant="outline">👍</Button>
-        <Button variant="outline">👎</Button>
+        <Button variant="outline">
+          <ThumbsUp />
+        </Button>
+        <Button variant="outline">
+          <ThumbsDown />
+        </Button>
         <Button variant="destructive">Delete</Button>
       </CardFooter>
     </Card>
